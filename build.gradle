@@ -1,0 +1,5 @@
+// 根 build.gradle：只声明 Android Gradle Plugin 版本
+// 与本机已缓存工具链保持一致（AGP 9.3.2 + Gradle 9.5.1 + JDK 17）
+plugins {
+    id 'com.android.application' version '9.3.2' apply false
+}

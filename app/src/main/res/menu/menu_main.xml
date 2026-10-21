@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页菜单：本地搜索 + 日志入口 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/action_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+    <!-- 日志入口：没有 adb 时从这里查看 / 导出运行日志 -->
+    <item
+        android:id="@+id/action_log"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/action_log"
+        app:showAsAction="never" />
+</menu>

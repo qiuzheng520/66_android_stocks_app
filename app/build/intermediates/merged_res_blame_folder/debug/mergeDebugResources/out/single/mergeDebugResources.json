@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "com.example.stocks.app-debug-32:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.stocks.app-main-34:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.stocks.app-main-34:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.stocks.app-main-34:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/drawable_bg_item.xml.flat",
+        "source": "com.example.stocks.app-main-34:/drawable/bg_item.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.stocks.app-main-34:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/layout_activity_crash.xml.flat",
+        "source": "com.example.stocks.app-main-34:/layout/activity_crash.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/xml_file_paths.xml.flat",
+        "source": "com.example.stocks.app-main-34:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/layout_activity_detail.xml.flat",
+        "source": "com.example.stocks.app-main-34:/layout/activity_detail.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.stocks.app-main-34:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/layout_fragment_quote.xml.flat",
+        "source": "com.example.stocks.app-main-34:/layout/fragment_quote.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.example.stocks.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/layout_item_quote.xml.flat",
+        "source": "com.example.stocks.app-main-34:/layout/item_quote.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/drawable_ic_back.xml.flat",
+        "source": "com.example.stocks.app-main-34:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/menu_menu_main.xml.flat",
+        "source": "com.example.stocks.app-main-34:/menu/menu_main.xml"
+    },
+    {
+        "merged": "com.example.stocks.app-debug-32:/layout_activity_log.xml.flat",
+        "source": "com.example.stocks.app-main-34:/layout/activity_log.xml"
+    }
+]

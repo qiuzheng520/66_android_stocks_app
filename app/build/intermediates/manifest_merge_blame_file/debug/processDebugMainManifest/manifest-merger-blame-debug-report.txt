@@ -1,0 +1,189 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!-- 应用清单：只申请联网权限，全部页面本地运行 -->
+3<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="com.example.stocks"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+8-->INJECTED
+9        android:minSdkVersion="24"
+9-->INJECTED
+10        android:targetSdkVersion="34" />
+10-->INJECTED
+11
+12    <!-- 仅联网权限：爬取行情需要访问网站 -->
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:6:5-67
+13-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:6:22-64
+14
+15    <permission
+15-->[androidx.core:core:1.9.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\5bd6d02b6d67afb1ca60d9edb042f11f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+16        android:name="com.example.stocks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.9.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\5bd6d02b6d67afb1ca60d9edb042f11f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.9.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\5bd6d02b6d67afb1ca60d9edb042f11f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.example.stocks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.9.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\5bd6d02b6d67afb1ca60d9edb042f11f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\5bd6d02b6d67afb1ca60d9edb042f11f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:8:5-56:19
+22        android:name="com.example.stocks.StocksApplication"
+22-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:9:9-42
+23        android:allowBackup="true"
+23-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:10:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.9.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\5bd6d02b6d67afb1ca60d9edb042f11f\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+26-->INJECTED
+27        android:icon="@mipmap/ic_launcher"
+27-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:11:9-43
+28        android:label="@string/app_name"
+28-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:12:9-41
+29        android:supportsRtl="true"
+29-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:13:9-35
+30        android:theme="@style/Theme.Stocks"
+30-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:14:9-44
+31        android:usesCleartextTraffic="false" >
+31-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:15:9-45
+32
+33        <!-- 首页：TabLayout + ViewPager2 + RecyclerView -->
+34        <activity
+34-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:18:9-26:20
+35            android:name="com.example.stocks.ui.MainActivity"
+35-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:19:13-44
+36            android:exported="true"
+36-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:20:13-36
+37            android:windowSoftInputMode="adjustResize" >
+37-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:21:13-55
+38            <intent-filter>
+38-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:22:13-25:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:23:17-69
+39-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:23:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:24:17-77
+41-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:24:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <!-- 品种详情页：内嵌 WebView -->
+46        <activity
+46-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:29:9-31:40
+47            android:name="com.example.stocks.ui.DetailActivity"
+47-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:30:13-46
+48            android:exported="false" />
+48-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:31:13-37
+49
+50        <!-- 日志查看页：可把日志文件交给其它应用打开 -->
+51        <activity
+51-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:34:9-36:40
+52            android:name="com.example.stocks.ui.LogActivity"
+52-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:35:13-43
+53            android:exported="false" />
+53-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:36:13-37
+54
+55        <!-- 崩溃提示页：崩溃后由 AlarmManager 拉起 -->
+56        <activity
+56-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:39:9-44:40
+57            android:name="com.example.stocks.ui.CrashActivity"
+57-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:40:13-45
+58            android:excludeFromRecents="true"
+58-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:41:13-46
+59            android:exported="false"
+59-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:42:13-37
+60            android:launchMode="singleTask"
+60-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:43:13-44
+61            android:noHistory="true" />
+61-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:44:13-37
+62
+63        <!-- FileProvider：把日志文件分享给文件管理器 / 文本编辑器等其它应用 -->
+64        <provider
+64-->INJECTED
+65            android:name="androidx.core.content.FileProvider"
+65-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:48:13-62
+66            android:authorities="com.example.stocks.fileprovider"
+66-->INJECTED
+67            android:exported="false"
+67-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:50:13-37
+68            android:grantUriPermissions="true" >
+68-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:51:13-47
+69            <meta-data
+69-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:52:13-54:54
+70                android:name="android.support.FILE_PROVIDER_PATHS"
+70-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:53:17-67
+71                android:resource="@xml/file_paths" />
+71-->D:\CODE\android_apk\66_android_stocks_app\app\src\main\AndroidManifest.xml:54:17-51
+72        </provider>
+73        <provider
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\249a117f952f1ccc56966a53dd99bf0a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+74            android:name="androidx.startup.InitializationProvider"
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\249a117f952f1ccc56966a53dd99bf0a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+75            android:authorities="com.example.stocks.androidx-startup"
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\249a117f952f1ccc56966a53dd99bf0a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+76            android:exported="false" >
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\249a117f952f1ccc56966a53dd99bf0a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+77            <meta-data
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\249a117f952f1ccc56966a53dd99bf0a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\249a117f952f1ccc56966a53dd99bf0a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+79                android:value="androidx.startup" />
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\249a117f952f1ccc56966a53dd99bf0a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+80            <meta-data
+80-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\qzone\.gradle\caches\9.5.1\transforms\fec4107a468e2b0ccb95aa6f4b566b0f\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+81-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\qzone\.gradle\caches\9.5.1\transforms\fec4107a468e2b0ccb95aa6f4b566b0f\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+82                android:value="androidx.startup" />
+82-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\qzone\.gradle\caches\9.5.1\transforms\fec4107a468e2b0ccb95aa6f4b566b0f\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+83            <meta-data
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+84                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+85                android:value="androidx.startup" />
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+86        </provider>
+87
+88        <receiver
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+89            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+90            android:directBootAware="false"
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+91            android:enabled="true"
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+92            android:exported="true"
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+93            android:permission="android.permission.DUMP" >
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+95                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+98                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+101                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+102            </intent-filter>
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+104                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\qzone\.gradle\caches\9.5.1\transforms\15a7c8e5611191e86dd0da464f9d4f28\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+105            </intent-filter>
+106        </receiver>
+107    </application>
+108
+109</manifest>

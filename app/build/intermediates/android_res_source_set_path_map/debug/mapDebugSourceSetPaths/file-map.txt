@@ -1,0 +1,8 @@
+com.example.stocks.app-pngs-0 D:\CODE\android_apk\66_android_stocks_app\app\build\generated\res\pngs\debug
+com.example.stocks.app-updated_navigation_xml-1 D:\CODE\android_apk\66_android_stocks_app\app\build\generated\updated_navigation_xml\debug
+com.example.stocks.app-packageDebugResources-2 D:\CODE\android_apk\66_android_stocks_app\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.stocks.app-packageDebugResources-3 D:\CODE\android_apk\66_android_stocks_app\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.stocks.app-debug-4 D:\CODE\android_apk\66_android_stocks_app\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.stocks.app-debug-5 D:\CODE\android_apk\66_android_stocks_app\app\src\debug\res
+com.example.stocks.app-main-6 D:\CODE\android_apk\66_android_stocks_app\app\src\main\res
+gradleHome-0 C:\Users\qzone\.gradle

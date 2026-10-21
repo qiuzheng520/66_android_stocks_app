@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 应用清单：只申请联网权限，全部页面本地运行 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 仅联网权限：爬取行情需要访问网站 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".StocksApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Stocks"
+        android:usesCleartextTraffic="false">
+
+        <!-- 首页：TabLayout + ViewPager2 + RecyclerView -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 品种详情页：内嵌 WebView -->
+        <activity
+            android:name=".ui.DetailActivity"
+            android:exported="false" />
+
+        <!-- 日志查看页：可把日志文件交给其它应用打开 -->
+        <activity
+            android:name=".ui.LogActivity"
+            android:exported="false" />
+
+        <!-- 崩溃提示页：崩溃后由 AlarmManager 拉起 -->
+        <activity
+            android:name=".ui.CrashActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:noHistory="true" />
+
+        <!-- FileProvider：把日志文件分享给文件管理器 / 文本编辑器等其它应用 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

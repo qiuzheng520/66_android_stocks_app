@@ -1,0 +1,47 @@
+// 模块 build.gradle：纯 Java + View/XML，minSdk 24
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.stocks'
+    // 本机已安装 android-36 平台
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.example.stocks"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            // 个人学习项目，关闭混淆以简化构建
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        // 纯 Java 8 语法
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // UI 组件
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    // OkHttp：异步网络请求（子线程回调）
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    // Jsoup：解析 HTML 行情表格
+    implementation 'org.jsoup:jsoup:1.17.2'
+}

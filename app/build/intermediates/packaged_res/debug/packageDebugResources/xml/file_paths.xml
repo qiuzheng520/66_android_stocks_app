@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider 路径配置：允许把应用私有目录下的日志文件分享给其它应用 -->
+<paths>
+    <!-- 外部私有目录 logs/：日志文件所在位置 -->
+    <external-files-path
+        name="logs"
+        path="logs/" />
+    <!-- 外部私有目录根路径 -->
+    <external-files-path
+        name="external_files"
+        path="." />
+    <!-- 内部私有目录（外部存储不可用时的兜底） -->
+    <files-path
+        name="files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="." />
+</paths>

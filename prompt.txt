@@ -1,0 +1,8 @@
+纯Java Android原生App，不用Kotlin，View+XML，minSdk24。
+功能：爬取解析 https://zh.tradingeconomics.com/ 的行情，商品、股市、币种、加密货币、债券行情展示，无需登录，无官方API。
+依赖OkHttp + Jsoup解析HTML，OkHttp异步网络，子线程请求。
+页面：MainActivity带TabLayout+ViewPager2+RecyclerView，SwipeRefresh下拉刷新，SearchView本地搜索。
+列表Item：名称、现价、涨跌、涨跌幅，红跌绿涨。点击item打开WebView进入品种详情。
+实现请求限流、60s内存缓存、网络异常提示，仅INTERNET权限。
+分包：model、net、utils、ui、adapter，输出完整gradle配置、manifest、xml、全部Java代码，中文注释。
+附加说明：本项目仅个人学习，网页解析会因为网站页面改版失效，存在反爬封禁风险。
